@@ -45,6 +45,7 @@ evenOdd(5);
 
 List<int> myNamber = [12,57,46,59,86];
 printNumber(myNamber);
+sumNumber(myNamber);
 }
 
 
@@ -72,4 +73,13 @@ void printNumber(List<int> array) {
   for(int i = 0; i < array.length; i++ ) {
    print(array[i]);
   }
+} 
+
+void sumNumber(List<int> array) {
+  int sum = 0;
+  for(int i = 0; i < array.length; i++ ) {
+    sum += array[i];
+   
+  }
+  print(sum);
 } 
