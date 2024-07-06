@@ -1,0 +1,85 @@
+https://www.youtube.com/watch?v=G7WVnk2WEIc
+
+web3Forms
+
+عند اخذ مشروع جاهز من القتهب نعمل فقط
+npm install
+
+ng g c name --skip-teste
+تثبيت البوتستراب
+npm install bootstrap@5
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+تثبيت المتريل 
+ng add @angular/material
+MatButtonModule
+نضيف المديول تبع الي بضيفة
+
+alyrt
+npm install ngx-toastr --save
+  "./node_modules/ngx-toastr/toastr.css",
+
+يظهر المشاكل 
+npm audit
+
+عند الاضافة الى json نعيد التشغيل
+
+يظهر الاوامر
+ng g --help
+
+لكي نخفي الصفحات قبل تسجيل الدخول
+ng g g _guards/auth --skip-tests
+
+نغيير الالوان
+npm install bootswatch 
+"./node_modules/bootswatch/dist/united/bootstrap.css",
+
+
+dotnet tool update --global dotnet-ef
+
+unable to resolve dependency tree 
+هذا الخطى يعني ان الباكج لم يحدثها صاحبها يعني عادي 
+
+npm install @kolkov/ngx-gallery لكي نضيف صور 
+
+عندما يطلع الخطا نعمل npm install @kolkov/ngx-gallery --legacy-peer-deps
+نتجاهل الاصدارات
+
+ng g g _guards/prevent-unsaved-changes --skip-tests CanDeactivate 
+عمل حارس يمنع من الخروج من النص
+
+npm install ngx-spinner --legacy-peer-deps
+
+
+ 
+ng new nameproject
+ng new nameproject --no-standalone
+
+cd.. 
+cd. \ \
+التيكست اريا 
+npm install ngx-markdown
+
+npm install ngx-cookie-service --save
+
+لل guards
+npm install jwt-decode
+
+
+
+M.Authentication.JwtBearer
+M.Identity.EntityFrameworkCore
+M.Tokens
+Sys.Tokens.Jwt
+
+add-migration Done -Context "AuthDbContext"
+
+powrShel
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
+flutter clean
+flutter pub get
+
+لحذف مقريشن من قاعدة البيانات
+update-database 0
+
+git remote remove origin
