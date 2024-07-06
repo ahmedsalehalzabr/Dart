@@ -1,0 +1,232 @@
+Contains("ahmed") تحدد اسم داخل الست
+
+OOP
+اربع ركائز
+encapsulation
+الكبسله اخفاء البيانات
+نخفي تفاصيل الكلاس عن الكلاسات الاخرئ 
+اي نحول البابلك الى برايفت والي نريد ينشاف من كلاس اخر بشروطنا نعمل الست والقت  
+inheritance
+ياخذ الفلد من الكلاس الاب 
+وراثة
+polymorphism
+تعدد الاشكال 
+abstraction
+التجريد 
+اخفا التفاصيل التي لا تهم العميل 
+ميثد بدون body وتايب abstract والكلاس ضروري يكون abstract
+publc abstract void Deposit(decimal amount);
+وعند توريث الكلاس واستدعائهن نعمل لهم override
+لما ترجع لها بعد استدعاها من مكان اخر لا ترجع بيانات 
+اذاكان انترفيس مش كلاس لا نعمل override وال properties نعرفهن من جديد
+
+ 
+اعضاء الكلاس 
+1-Fields
+private decimal _balance; 
+يفضل يكون خاص
+2-Constants 
+const
+public const decimal ahmed = 100m;
+يكون ثابت مايتغير
+3-Properties 
+public decimal Balanace {get;set;}
+العالم الخارجي يقراء الفليد بالقت ويخزن بالست
+4-Methods
+public void WithDraw(decimal amount)
+{ _balance -= amount; }
+5-Events 
+الية للتواصل بين الابجكت
+public event EventHandle OnOverDraft;
+6-Operators 
+تمكن الكلاس من التعامل مع العمليات
+public static Account operator +(Acount a, Acount b)
+{
+ return new Acount {Balanace =a.Balanace + b.Balanace };
+}
+7-Constructors
+ميثود خاصة تتنادا اول مايتم عمل ابجكت وله نفس اسم الكلاس 
+يعني ابجكت من الكلاس 
+public Account(decimal balance)
+{
+  _balance = balance;
+}
+8-Finalizers
+~Account() {}
+يشبه الميثود لاكن بدون باراميتر عمله ينظف  مثل النتورك كناكشن
+9-Indexers
+10-Nested Types
+كلاس داخل كلاس الكلاس الداخلي
+
+ريفرنس للكلاس او اخذ ابجكت منة reference class
+Account a = new Account();
+
+انواع ال data type in c#
+1-reference type
+string-arrays-class-delegates
+2-value type
+numerics-boolean-char-struct
+
+
+typescript
+تعريف المتغيرات 
+let theName:string = "ahmed";
+theName = "ali";
+
+let showMsg = true;
+function showDetails(name:string, age:number, salary:number)
+{
+if(showMsg){
+return `Hello ${name}, Age Is ${age}, Salary Is ${salary}`;
+}
+ return '';
+}
+console.log(showDetails("Ahmed",40,5000));
+
+
+function addAll(...nums: number[]) : number {
+let result = 0;
+for (let i = 0; i < nums.length; i++) {
+result += nums[i];
+}
+return result;
+}
+console.log(addAll(10,20,100,10.5, +true));
+
+Arrow function 
+const add = function(num1: number, num2: number) : number {
+return num1 + num2;
+}
+console.log(add(10,20));
+
+const addarrow = (num1: number, num2: number) : number => num1 + num2;
+console.log(addarrow(10,20));
+
+
+4 function
+
+enum Level {
+kids = 15,
+easy = 9,
+medium = 6,
+hard = 3
+}
+let lvl:string = "easy";
+if (lvl === "easy") {
+console.log(`the level is ${lvl} and numbe of seconds is ${Level.easy}`);
+}
+
+5 object
+let myObject:{
+username:"ahmed",
+id:100,
+hire:true,
+}
+
+نضيف الtype annotations الى object
+let myObject:{
+username: string,
+idL number,
+hir: boolean
+} = {
+username:"ahmed",
+id:100,
+hire:true,
+}
+
+6 interface
+interface User {
+id: number,
+username: string,
+country: string,
+sayHello() : string,
+sayWelcome: () => string,
+getDouble(num: number) : number
+}
+let user: User = {
+id:100,
+username: "ahmed",
+country:"yemen",
+sayHello() {
+ return `Hello ${this.username}`;
+},
+sayWelcome: () =>{
+return `Welcome ${user.username}`;
+},
+getDouble(n) {
+return n * 2;
+}
+}
+console.log(user);
+لا يوجد في الجافا اسكربت
+
+7 class
+class User {
+u: string;
+s: number;
+msg: () => string;
+constructor(username: string, salary: number) {
+this.u: username;
+this.s: salary;
+this.msg = function () {
+return ` Hello ${this.u} Your Salary Is ${this.s}`;
+}}
+sayMsg() {
+return ` Hello ${this.u} Your Salary Is ${this.s}`;
+}
+}
+اختصار الكلاس السابق
+class User {
+msg: () => string;
+constructor(private username: string, public salary: number) {
+this.msg = function () {
+return ` Hello ${this.u} Your Salary Is ${this.s}`;
+}}
+sayMsg() {
+return ` Hello ${this.u} Your Salary Is ${this.s}`;
+}
+}
+
+8 encpsolation الانكبسليشن get set
+اوصل عبر الست والقت من خارج الكلاس الى متغير نوعه برايفت
+class User {
+msg: () => string;
+constructor(private _username: string, public salary: number) {
+this.msg = function () {
+return ` Hello ${this._username} Your Salary Is ${this.salary}`;
+}}
+sayMsg() {
+return ` Hello ${this._username} Your Salary Is ${this.salary}`;
+}
+get username() : string {
+return this._username;
+}
+set username(value:string) {
+this._username = value;
+}
+}
+
+let userOne = new User("Ahmed",55200,"Yemen");
+
+console.log(userOne.username);
+
+implements مابين كلاس وانترفيس
+
+9 Polymorphism تعدد الاشكال 
+class player {
+constractor(public name : string) {}
+attack() : void {
+console.log("now");
+}
+} 
+
+class Amazon extends player {
+constractor(name : string,public spears: number) {
+super(name);
+}
+override attack() : void {
+super.attack();
+console.log("with spear");
+this.spears -=1;
+}
+} 
