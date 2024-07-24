@@ -83,3 +83,6 @@ flutter pub get
 update-database 0
 
 git remote remove origin
+
+للحصول على id Guid نضغط على interactive ونكتب Guid.NewGuid()
+git clone https://.....

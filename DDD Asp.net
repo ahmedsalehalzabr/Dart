@@ -1,0 +1,13 @@
+DDD
+ثلاث طبقات
+1- Application تعتمد على الطبقتين الاخرى
+
+
+2- Domain لا تعتمد على اي طبقه
+Entity-Models
+
+
+3- Infrastructure تعتمد على طبقة الابليكيشن
+
+DbContext 
+Middleware

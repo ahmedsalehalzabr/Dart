@@ -69,3 +69,4 @@ void view(){
   print('salary:$salary');
 }
 }
+
