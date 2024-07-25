@@ -1,13 +1,20 @@
 DDD
 ثلاث طبقات
 1- Application تعتمد على الطبقتين الاخرى
-
+UI 
 
 2- Domain لا تعتمد على اي طبقه
+الداتا بيس ونظام التشغيل
+مكوناته 
+Entity => like Id Name لا يتغيرو 
+Value Object => like City Street
+Aggregate  روت انتيتي مجموعه من الانتيتي مثل الشجره 
 Entity-Models
+التغيير فيه يتطلب تغيير في الطبقات الاخرى
 
 
 3- Infrastructure تعتمد على طبقة الابليكيشن
-
+Database - sending email - related code
+يمكن التغيير فيها 
 DbContext 
 Middleware

@@ -86,3 +86,6 @@ git remote remove origin
 
 للحصول على id Guid نضغط على interactive ونكتب Guid.NewGuid()
 git clone https://.....
+
+الفرق بين prodected => لا يظهر الا في نفس الكلاس و قابل للوراثه   private => لا يظهر الا في نفس الكلاس 
+prodected 
