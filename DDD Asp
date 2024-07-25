@@ -1,14 +1,15 @@
 DDD
+important desgin pattern in DDD is Repository Pattern
 ثلاث طبقات
 1- Application تعتمد على الطبقتين الاخرى
-UI 
+UI Service , API Endpoints
 
 2- Domain لا تعتمد على اي طبقه
 الداتا بيس ونظام التشغيل
 مكوناته 
-Entity => like Id Name لا يتغيرو 
-Value Object => like City Street
-Aggregate  روت انتيتي مجموعه من الانتيتي مثل الشجره 
+-Entity => like Id Name لا يتغيرو يعرف بال اي دي
+-Value Object => like City Street يعرف بالقيم
+-Aggregate  روت انتيتي مجموعه من Entity و Value Object مثل الشجره 
 Entity-Models
 التغيير فيه يتطلب تغيير في الطبقات الاخرى
 
@@ -16,5 +17,7 @@ Entity-Models
 3- Infrastructure تعتمد على طبقة الابليكيشن
 Database - sending email - related code
 يمكن التغيير فيها 
+-Repositories
+-File Service
 DbContext 
 Middleware

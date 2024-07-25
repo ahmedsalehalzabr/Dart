@@ -88,4 +88,3 @@ git remote remove origin
 git clone https://.....
 
 الفرق بين prodected => لا يظهر الا في نفس الكلاس و قابل للوراثه   private => لا يظهر الا في نفس الكلاس 
-prodected 
