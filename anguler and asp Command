@@ -101,3 +101,11 @@ CDN  شبكه من السرفرات متفرقه حول العالم بحيث ن
 Built-in هو مصطلح يُستخدم لوصف الميزات أو الأدوات التي تكون موجودة ومدمجة في نظام أو برنامج أو جهاز ما بشكل افتراضي، ولا تحتاج إلى إضافة أو تثبيت خارجي
 
 RxJS لتبسيط التعامل مع البيانات التي تتغير مع مرور الوقت مثل الأحداث، والنقرات، وطلبات HTTP
+
+اضافة برانش جديد الى Github
+git checkout -b yourname/repositoryname
+git status
+git add .
+git commit -m "any commit"
+git push
+git push --set-upstream origin yourname/repositoryname
