@@ -1,5 +1,24 @@
 Abp فريم ورك مبني على الدومين درفن ديزاين 
 هو بنيه تحتيه كامله لعمل كل السفتوير مثل المايكروسرفسس وام في سي كل هذا على الدت نت
+هو معمول له بابلش على مجموعه باكجات مثل 
+NuGet مخصص للباك اند
+NPM مخصص للفرونت اند 
+ويتم التحكم بهم بواسطة CLI
+
+الهدف منه
+يشيل وجع راس المطورين من المهام الممله
+
+ماذا بيقدم
+Authorization -Authentication - Cross Cutting Concerns - Bootstrop helper
+Data filtering - UI Theming - Distributed Event Bus - Multi Tenancy
+HTTP API - Dynamic Proxies - Audit Logging
+
+Apb supports Modular architecture
+Modular architecture يقدم 
+Pre-Built Modules and Themes
+NuGet and NPM
+Extensible/Replaceable
+
 shorthand for Asp.Net Boilerplate
 الموقع الرسمي https://abp.io 
 1-free يعتبر كافي لعمل برامج حقيقيه للعملاء في شركات شغاله على المجاني
@@ -11,3 +30,9 @@ Applicable solutions تشغل الرولز بيز بمجرد التثبيت يع
 Knowledge sharing الي كتبه ناس محترفه تتعلم منهم 
 Improves code quality جز كبير من الكود مش حتكتبه هو مكتوب بطريقه  مافيها اخطاء معمول عليه يونت تستنق وفكسد وكل شي
 Reduces coding time وفرت الوقت لان في حاجات كثيره جاهزه مثل الوقن والكاشنق
+
+التثبيت
+node - yarn - redis
+dotnet tool install -g Volo.Abp.Cli
+عمل مشروع جديد 
+abp new ABPCourse.Demo1 -u angular -csf
