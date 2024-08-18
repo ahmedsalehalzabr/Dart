@@ -1,15 +1,26 @@
 DDD
 important desgin pattern in DDD is Repository Pattern
+هو نوع من الاركتكشر
 ثلاث طبقات
 1- Application تعتمد على الطبقتين الاخرى
 UI Service , API Endpoints
 
 2- Domain لا تعتمد على اي طبقه
 الداتا بيس ونظام التشغيل
+implements the core ,use busineww logic
 مكوناته 
 -Entity => like Id Name لا يتغيرو يعرف بال اي دي
+يعيش وحده بخلاف الفاليو ابجكت يعيش في نطاق الانتتي
 -Value Object => like City Street يعرف بالقيم
--Aggregate  روت انتيتي مجموعه من Entity و Value Object مثل الشجره 
+-Aggregate root روت انتيتي مجموعه من Entity و Value Object مثل الشجره 
+ is a pattern in Domain Driven Design
+  وفكرته تاخذ كل البريورتي والسب بريورتي كامل 
+-Repository
+-Domain Service
+-Specification هو باترن يشتغل في الينكيو تستخدمه لكي لاتكرر الوجك تبعك
+-Domain Event 
+ local -> Inside Application - Distributed -> Outside Application
+
 Entity-Models
 التغيير فيه يتطلب تغيير في الطبقات الاخرى
 
