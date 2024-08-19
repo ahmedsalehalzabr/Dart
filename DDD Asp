@@ -4,6 +4,10 @@ important desgin pattern in DDD is Repository Pattern
 ثلاث طبقات
 1- Application تعتمد على الطبقتين الاخرى
 UI Service , API Endpoints
+المكونات 
+-App Service
+-DTO
+-Unit of work وحده تحصل كلها او لاتحصل كلها
 
 2- Domain لا تعتمد على اي طبقه
 الداتا بيس ونظام التشغيل

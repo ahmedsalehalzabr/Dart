@@ -109,3 +109,23 @@ git add .
 git commit -m "any commit"
 git push
 git push --set-upstream origin yourname/repositoryname
+
+
+//ctr + r + g يحذف الي فوق
+// F12 تنتقل عبر اسم الكلاس 
+
+تحديث ال cli
+npm i -g @angular/cli
+
+generate proxy
+abp generate-proxy -t ng 
+
+ عمل مديول لكاتيقوري لتجربه
+ng g m modules/categories --routing --dry-run
+للتجربه تتاكد من المسارات --dry-run
+عمل مديول لكاتيقوري
+ng g m modules/categories --routing
+عمل كمبوننت
+ng g c modules/categories/listCategories -m Categories --skip-tests
+
+yarn start or ng s
