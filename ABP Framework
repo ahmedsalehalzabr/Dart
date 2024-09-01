@@ -36,3 +36,12 @@ node - yarn - redis
 dotnet tool install -g Volo.Abp.Cli
 عمل مشروع جديد 
 abp new ABPCourse.Demo1 -u angular -csf
+
+جنريت البروكسي
+abp generate-proxy -t ng 
+وعند كل اضاقة قي الباك نجنرك البروكسي
+
+تثبيت ال ngx-datatable
+npm i @swimlane/ngx-datatable 
+كلمة السر الديفولت 
+1q2w3E*
