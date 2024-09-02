@@ -84,3 +84,33 @@ void sumNumber(List<int> array) {
   print(sum);
 } 
 
+
+// const قيمه ثابتة ولايمكن ان نمرر له قيمه ويشغل مكان في الذاكره
+// final نمرر له قيمه مره واحده فقط ولا يشغل مكان في الذاكره
+// Map => {key: value}
+// List: ["ahmed", "Ali"]
+// تُستخدم عندما تحتاج إلى هيكل بيانات ديناميكي حيث يمكن للعناصر أن تضاف أو تُحذف بشكل متكرر.
+// تحتوي على عناصر بأنواع مختلفة (في بعض اللغات)، أو يمكن تحديد النوع عند إنشاء القائمة
+// Array:
+// تُستخدم عندما تعرف مسبقًا عدد العناصر ولن يتغير الحجم، مثل الحالات التي تتطلب سرعة وكفاءة أكبر.
+//  تحتوي على عناصر من نفس النوع
+// Set: {"ahmed","ali"}
+// Function:
+// nameFunction(int parameter1 , int prameter2)
+//  {
+//  int c = parameter1 + parameter2
+//  print(c);
+//  }
+//  تشغيلها => nameFunction(20,10);
+
+// return معناته يرجع لي قيمه واخزن الفانكشن في متغير
+
+// assert اتحقق من قيمه معينه 
+
+// class Mobile {static String username = "Ahmed"; String username2 = "Ali";} 
+//  => تشغيله Mobile mobile = new Mobile();
+// print(mobile.username2);
+//  الاستاتك print(Mobile.username);
+
+// set اعادة تعيين القيم
+// get ترجع لي قيمة متغير بنا على قيمه محدده
