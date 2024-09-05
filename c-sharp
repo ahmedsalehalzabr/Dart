@@ -1,0 +1,83 @@
+الفرق بين prodected => لا يظهر الا في نفس الكلاس و قابل للوراثه   private => لا يظهر الا في نفس الكلاس 
+
+Cashing هو عمليه تخزين نسخه مؤقته من البيانات تكون جاهزه تققل طلب السرفر للبيانات كل مره
+ فائدتها البيانات الي مش بتتغير نحطها في الكاش مثل اسماء الدول 
+ تنحط البيانات فيها على شكل جدول كي وفاليو
+ الطرق
+ يتم الستخدامها داخل مجلد ال Lookups
+ 1- memory caching
+ 2- redis
+ Middleware 
+ يساعد في مراقبة الأداء، اكتشاف الأخطاء، وتحليل استخدام التطبيق.ويظهر على الكونسل وكذالك في ملف لوقز
+  يساعد في تقديم تجربة مستخدم أفضل وتسجيل الأخطاء بشكل أفضل لإصلاحها لاحقًا
+AutoMapper 
+يعمل لك ماب مابين الانتيتيز وال دي تي او
+Load Balancer 
+جهاز او برنامج يوزع الاحمال على السرفرات
+Microservices طريقه لبنا التطبيقات بحيث تكون مكونه من الخدمات الصغبره تشتغل مع بعضها
+WebSocket بروتوكول يسمح للتواصل بين المستخدم والسرفر
+ORM تسمح بربط قواعد البيانات بالكود بشكل سهل بدون كتابه سكول مباشر
+Cookies ملف نصي يعمل على حفظ تسجيل دخولك وتفضيلاتك داخل المتصفح
+Webhook نوع من ال API ارسال اشعارات الى السيرفر لما يحدث حدث في التطبيق
+CDN  شبكه من السرفرات متفرقه حول العالم بحيث نوزع المحتوى على السرفرات الاقرب
+Built-in هو مصطلح يُستخدم لوصف الميزات أو الأدوات التي تكون موجودة ومدمجة في نظام أو برنامج أو جهاز ما بشكل افتراضي، ولا تحتاج إلى إضافة أو تثبيت خارجي
+
+RxJS لتبسيط التعامل مع البيانات التي تتغير مع مرور الوقت مثل الأحداث، والنقرات، وطلبات HTTP
+
+
+
+delegat with method عادي
+
+  internal class Program
+  {
+      delegate void DelegateT(string name);
+
+    
+      static void Welcome(string name)
+      {
+          Console.WriteLine("Welcome" + name);
+      }
+ 
+      static void Main(string[] args)
+      {
+          Welcome("Ahmed");
+
+          DelegateT d1 = Welcome;
+          d1("Ali");
+      }
+  }
+
+delegat with Anonymous Method
+Anonymous Method هي ميثود مجهوله الهويه مالهاش اسم 
+ 
+  internal class Program
+  {
+      delegate void DelegateT(string name);
+
+ 
+      static void Main(string[] args)
+      {
+          
+          DelegateT d1 = delgate (string name){Console.WriteLine("Welcome" + name);};
+          d1("Ali");
+      }
+  }
+
+
+  delegat with Lambda Expression
+
+    internal class Program
+  {
+      delegate void DelegateT(string name);
+
+ 
+      static void Main(string[] args)
+      {
+          
+          DelegateT d1 = (string name) => {Console.WriteLine("Welcome" + name);};
+          d1("Ali");
+
+         اذا كان براميتر واحد وبطي واحد نكتب المدا اكسبريشن كذا 
+          DelegateT d1 = name => Console.WriteLine("Welcome" + name);
+      }
+  }
