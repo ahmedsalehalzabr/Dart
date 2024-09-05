@@ -45,3 +45,6 @@ abp generate-proxy -t ng
 npm i @swimlane/ngx-datatable 
 كلمة السر الديفولت 
 1q2w3E*
+
+docker 
+نضيف ملف بجانب المشروع نسميه Dockerfile 
